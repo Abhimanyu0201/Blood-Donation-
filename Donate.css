@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.regi-form{
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.141);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px rgba(80, 75, 75, 0.082);
+
+}
+.container h1{
+    color: rgba(255, 0, 0, 0.879);
+}
+.form-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+}
+
+.main-user-info{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+.user-input-box label{
+    color: rgb(0, 0, 0);
+    width: 95%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid rgba(5, 1, 1, 0.356);
+    padding: 0 10px;
+}
+
+.gender-Title{
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(17, 17, 17);
+}
+.gender-category{
+    color: rgb(0, 0, 0);
+    margin: 15px 0;
+}
+.gender-category label{
+    padding: 0 10px 0 5px;
+}
+.gender-category label,
+.gender-category input,
+.submite-btn input{
+    cursor: pointer;
+}
+.submite-btn{
+    margin-top: 30px;
+}
+
+.submite-btn input{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(253, 246, 246);
+    background: rgba(255, 7, 7, 0.8);
+}
+.submite-btn input:hover{
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.notic {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #FFD700; /* Set the color for the "DONATION" part */
+}
+
+.notic-info {
+    margin-top: 20px;
+}
+
+.notic-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.notic-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Apply responsive styles for smaller screens */
+    .logo {
+        font-size: 20px;
+    }
+
+    .notic-info h1 {
+        font-size: 24px;
+    }
+
+    .notic-info p {
+        font-size: 14px;
+    }
+}
+/*
+.notic{
+    height: 30vh;
+    background-color: #9c95ae;
+    color: #000000;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .notic .logo{
+    
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(253, 249, 249);
+    
+  }
+  span{
+    color: red;
+    
+  }
+  
+  
+  .notic-info{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .notic-info h1,p{
+    padding-bottom: 20px;
+  }
+  .notic-info p{
+    font-size: 20px;
+  }
+
+
+
+/*body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.regi-form {
+    padding: 50px 0;
+    background: url(bg3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff4d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    color: #ef0101;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.user-input-box {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.gender-detail {
+    margin-top: 20px;
+}
+
+.gender-Title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gender-category {
+    display: flex;
+    gap: 10px;
+}
+
+.submite-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="button"] {
+    background-color: #f50a0ae3;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+

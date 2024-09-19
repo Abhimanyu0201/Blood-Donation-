@@ -1,0 +1,43 @@
+<div class="material">
+                <h1>FIND A DONOR</h1>
+                <FORM>
+                    <label for="cars">Select Your Blood Goup:</label>
+                        <select class="blood-group">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select> <br>
+                        <label for="cars">Select Your Country:</label>
+                        <select class="country">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select><br>
+                        <label for="cars">Select Your State:</label>
+                        <select class="Sate">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select><br>
+                        <label for="cars">Select Your District:</label>
+                        <select class="District">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select><br>
+                        <label for="cars">Select Your Location:</label>
+                        <select class="Location">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select>
+
+                        
+                                    
+                </FORM>
+            </div>

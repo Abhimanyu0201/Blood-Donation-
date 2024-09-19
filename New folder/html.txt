@@ -1,0 +1,3 @@
+<form action="insert_data.php" method="post"> <!-- Assuming your PHP script is named insert_data.php -->
+    <!-- ... existing form fields ... -->
+</form>

@@ -1,0 +1,38 @@
+<?php
+$servername = "your_database_host"; // usually "localhost"
+$username = "your_database_username";
+$password = "your_database_password";
+$dbname = "DonorDatabase";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fullName = $_POST["fullName"];
+    $bloodGroup = $_POST["bloodGroup"];
+    $mobileNo = $_POST["mobileNo"];
+    $age = $_POST["age"];
+    $email = $_POST["email"];
+    $country = $_POST["Country"];
+    $state = $_POST["State"];
+    $district = $_POST["District"];
+    $city = $_POST["City"];
+    $location = $_POST["Location"];
+    $gender = $_POST["gender"];
+
+    $sql = "INSERT INTO Donors (fullName, bloodGroup, mobileNo, age, email, country, state, district, city, location, gender)
+            VALUES ('$fullName', '$bloodGroup', '$mobileNo', $age, '$email', '$country', '$state', '$district', '$city', '$location', '$gender')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Record inserted successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+$conn->close();
+?>
